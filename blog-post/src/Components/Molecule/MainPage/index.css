@@ -1,0 +1,128 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(233, 226, 226, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  /* display: flex;
+  place-items: center; */
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #001935;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: rgba(0, 25, 53, 0.2);
+  background-color: #405368;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.card { 
+  margin: 50px 0px 0px 0px;
+  /* border: 1px solid rgba(0, 25, 53, 0.2); */
+  border-radius: 6px;
+  width: 500px;
+  height: 700px;
+  background-image: url(../../../images/tumblr.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  margin: 20px auto;
+  border: 1px solid rgba(0, 25, 53, 0.2);
+  border-radius: 6px;
+  max-width: 500px;
+  background-color: #f9f9f9;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 30px 20px 30px;
+}
+
+ul {
+  padding: 10px 40px 30px 40px;
+  margin: 0px;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: RGB(var(--white));
+  border: 1px solid rgba(0, 25, 53, 0.2);
+  border-radius: 10px;
+  margin-right: 15px;
+  padding: 8px 12px;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .container {
+    max-width: 500px;
+  }
+  
+  .card {
+    width: 100%;
+    height: 500px ;
+  }
+
+  .toolbar {
+    display: flex;
+    justify-content: center;
+  }
+
+}
