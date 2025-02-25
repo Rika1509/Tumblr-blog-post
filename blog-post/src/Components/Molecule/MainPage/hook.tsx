@@ -62,8 +62,9 @@ function getComments() {
 }
 
 
-function showComments() {
-  setShowListComments(true);
+  function showComments() {
+    setShowListComments(prev => !prev);
+
 }
 
 return {

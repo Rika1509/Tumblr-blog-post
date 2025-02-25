@@ -18,7 +18,9 @@ function App() {
       <div className="container">
         <Post />
         <div className="toolbar">
-          <button onClick={showComments}>Mostra commenti</button>
+          <button onClick={showComments}>
+            {showListComments ? "Nascondi commenti" : "Mostra commenti"}
+          </button>
         </div>
           {showListComments && (
             <ul>
